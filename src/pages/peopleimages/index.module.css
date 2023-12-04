@@ -56,6 +56,28 @@
   color: white;
   font-size: 16px;
 }
+.background .flexs .textflex1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+.background .flexs .textflex1 h2 {
+  font-family: "Nova Square", sans-serif;
+  color: rgb(202, 165, 0);
+}
+.background .flexs .textflex1 h3 {
+  font-family: "Nova Square", sans-serif;
+  color: white;
+  width: 200px;
+}
+.background .flexs .textflex1 h4 {
+  width: 200px;
+  font-family: "Nova Square", sans-serif;
+  color: white;
+  font-size: 16px;
+}
 .background .flexs .controlimages div {
   display: flex;
   justify-content: center;
@@ -90,6 +112,29 @@
   justify-content: space-around;
   flex-direction: column;
   gap: 50px;
+}
+.background .texth4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nova Square", sans-serif;
+  color: rgb(202, 165, 0);
+  font-size: 40px;
+  margin-top: 40px;
+}
+.background .images1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+.background .images1 .imagescontrol img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 30vh;
+  border-radius: 10px;
 }
 
 @media (min-width: 992px) {
@@ -129,25 +174,20 @@
     color: white;
     font-size: 16px;
   }
-  .background .flexs .youtubeimages {
-    margin-top: 80px;
-    gap: 50px;
-  }
-  .background .flexs .youtubeimages .youtubemedia {
+  .background .flexs .textflex1 {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 40px;
+    justify-content: center;
+    gap: 20px;
   }
-  .background .flexs .youtubeimages .youtubemedia .textimages h2 {
+  .background .flexs .textflex1 h2 {
     font-family: "Nova Square", sans-serif;
     color: rgb(202, 165, 0);
-    font-size: 40px;
   }
-  .background .flexs .youtubeimages .youtubemedia .iframes {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    gap: 90px;
+  .background .flexs .textflex1 h4 {
+    width: 650px;
+    font-family: "Nova Square", sans-serif;
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
   }
 }/*# sourceMappingURL=index.module.css.map */

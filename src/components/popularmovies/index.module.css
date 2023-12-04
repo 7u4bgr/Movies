@@ -37,13 +37,14 @@
 }
 .background .flexs .swiperscontrol {
   margin-top: 30px;
+  cursor: grabbing;
+  text-decoration: none;
 }
 .background .flexs .swiperscontrol img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
-  cursor: grabbing;
 }
 .background .flexs .swiperscontrol img:hover {
   transform: scale(1.1);
@@ -103,10 +104,10 @@
   }
   .background .flexs .swiperscontrol {
     margin-bottom: 20px;
-    margin-top: 40px;
   }
   .background .flexs .swiperscontrol img {
-    width: 80%;
+    margin-top: 30px;
+    height: 35vh;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 10px;

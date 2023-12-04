@@ -42,12 +42,13 @@
       }
       .swiperscontrol {
         margin-top: 30px;
+        cursor: grabbing;
+        text-decoration: none;
         img {
        width: 100%;
          
           object-fit: cover;
           border-radius: 10px;
-          cursor: grabbing;
         }
         img:hover {
           transform: scale(1.1);
@@ -124,10 +125,10 @@
         }
         .swiperscontrol {
           margin-bottom: 20px;
-          margin-top: 40px;
           img {
+            margin-top: 30px;
          
-          width: 80%;
+         height: 35vh;
             object-fit: cover;
             border-radius: 10px;
           }

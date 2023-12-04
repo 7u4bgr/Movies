@@ -41,11 +41,12 @@
         }
       }
       .swiperscontrol {
-        margin-top: 30px;
+        cursor: grabbing;
+        text-decoration: none;
         img {
-          cursor: grabbing;
+          margin-top: 30px;
         
-          height: 26vh;
+         width: 100%;
           object-fit: cover;
           border-radius: 10px;
         }
@@ -126,7 +127,7 @@
           margin-bottom: 20px;
           margin-top: 40px;
           img {
-            width: 80%;
+           height: 35vh;
         
             object-fit: cover;
             border-radius: 10px;

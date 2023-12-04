@@ -33,13 +33,14 @@
       flex-wrap: wrap;
       gap: 50px;
       .movies {
+        text-decoration: none;
         margin-top: 40px;
         display: flex;
         flex-direction: column;
         gap: 10px;
+        cursor: grabbing;
         .images {
           img {
-          cursor: grabbing;
 
             height: 26vh;
           }

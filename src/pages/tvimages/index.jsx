@@ -19,7 +19,7 @@ const TvImages = () => {
     <div className={styles.background}>
       <div className={styles.flexs}>
         <div className={styles.texth2}>
-          <h2>{data?.original_title}</h2>
+          <h2>{data?.name}</h2>
         </div>
 
         <div className={styles.control}>
@@ -54,15 +54,27 @@ const TvImages = () => {
               <h3>{data?.last_air_date}</h3>
             </div>
             <div className={styles.textflex}>
+              <h2>Number of Seasons:</h2>
+              <h3>{data?.number_of_episodes}</h3>
+            </div>
+            <div className={styles.textflex}>
+              <h2>Status:</h2>
+              <h3>{data?.status}</h3>
+            </div>
+            <div className={styles.textflex}>
               <h2>Score:</h2>
               <h3>{Math.trunc(data?.vote_average)}</h3>
             </div>
-            <div className={styles.textflex}>
+          </div>
+        </div>
+            <div className={styles.textflex1}>
               <h2>Overview:</h2>
               <h4>{data?.overview}</h4>
             </div>
-          </div>
-        </div>
+        <div className={styles.h2texts}>
+          <h2>Carts</h2>
+
+            </div>
         <div className={styles.controlimages}>
           {data2?.cast.slice(0, 10).map((item) => (
             <Link to={"/person/"+item.id}>
@@ -71,6 +83,7 @@ const TvImages = () => {
                 alt=""
               />
               <h2>{item.name}</h2>
+              <h2>({item.character})</h2>
             </Link>
           ))}
         </div>

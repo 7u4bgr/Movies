@@ -37,9 +37,10 @@
           display: flex;
           flex-direction: column;
           gap: 10px;
+          cursor: grabbing;
+          text-decoration: none;
           .images {
             img {
-          cursor: grabbing;
 
               height: 26vh;
             }

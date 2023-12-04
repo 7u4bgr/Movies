@@ -40,9 +40,10 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  cursor: grabbing;
+  text-decoration: none;
 }
 .background .control .moviescontrol .movies .images img {
-  cursor: grabbing;
   height: 26vh;
 }
 .background .control .moviescontrol .movies .texts1 {

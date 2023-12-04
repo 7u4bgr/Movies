@@ -36,13 +36,14 @@
   gap: 50px;
 }
 .background .control .moviescontrol .movies {
+  cursor: grabbing;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  text-decoration: none;
 }
 .background .control .moviescontrol .movies .images img {
-  cursor: grabbing;
   height: 26vh;
 }
 .background .control .moviescontrol .movies .texts1 {

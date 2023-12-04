@@ -24,14 +24,14 @@ const TopTvShows = () => {
           </Link>
         </div>
         <Swiper
-          spaceBetween={5}
-          slidesPerView={3}
+          spaceBetween={15}
+          slidesPerView={6}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
           breakpoints={{
             0: {
               spaceBetween: 24,
-              slidesPerView: 2.4,
+              slidesPerView: 2.3,
             },
             768: {
               spaceBetween: 24,
@@ -45,18 +45,18 @@ const TopTvShows = () => {
         >
           {data?.map((item) => (
             <SwiperSlide>
-              <div className={styles.swiperscontrol}>
-                <Link to={"/tv/"+item.id}>
+              <Link  to={"/tv/"+item.id} className={styles.swiperscontrol}>
+                <a>
                 <img src={"https://image.tmdb.org/t/p/original"+item.poster_path} alt="" />
-                </Link>
+                </a>
                 <div className={styles.swiperstexts}>
                   <div className={styles.skortext}>
                     <h1>{Math.trunc(item.vote_average)}</h1>
-                    <h2>{item.original_name}</h2>
+                    <h2>{item.name}</h2>
                   </div>
                   <h3>{item.first_air_date}</h3>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>

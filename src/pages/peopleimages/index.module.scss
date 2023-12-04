@@ -59,6 +59,28 @@
           }
         }
       }
+      .textflex1 {
+        display: flex;
+       align-items: center;
+        justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+      h2 {
+        font-family: "Nova Square", sans-serif;
+        color: rgb(202, 165, 0);
+      }
+      h3 {
+        font-family: "Nova Square", sans-serif;
+        color: white;
+        width: 200px;
+      }
+      h4 {
+        width: 200px;
+        font-family: "Nova Square", sans-serif;
+        color: white;
+        font-size:16px;
+      }
+    }
       .controlimages{
         div{
           display: flex;
@@ -100,6 +122,32 @@
         flex-direction: column;
         gap: 50px;
           }
+        }
+      }
+    }
+    .texth4{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Nova Square", sans-serif;
+      color: rgb(202, 165, 0);
+      font-size: 40px;
+      margin-top: 40px;
+    }
+    .images1{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 40px;
+    
+      .imagescontrol{
+      
+        img{
+          width: 100%;
+          object-fit: cover;
+          height: 30vh;
+          border-radius: 10px;
         }
       }
     }
@@ -148,30 +196,22 @@
             }
           }
         }
-        .youtubeimages{
-        margin-top: 80px;
-        
-        gap: 50px;
-        .youtubemedia{
+        .textflex1 {
           display: flex;
-     
-        align-items: center;
-        flex-direction: column;
-        gap: 40px;
-          .textimages{
-            
-            h2{
-              font-family: "Nova Square", sans-serif;
-              color: rgb(202, 165, 0);
-              font-size: 40px;
-            }
-          }
-          .iframes{
-              display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-        gap: 90px;
-          }
+         
+          justify-content: center;
+        gap: 20px;
+        h2 {
+          font-family: "Nova Square", sans-serif;
+          color: rgb(202, 165, 0);
+        }
+      
+        h4 {
+          width: 650px;
+          font-family: "Nova Square", sans-serif;
+          color: white;
+          font-size:16px;
+          line-height: 30px;
         }
       }
       }

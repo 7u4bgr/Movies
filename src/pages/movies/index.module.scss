@@ -33,9 +33,10 @@
         flex-wrap: wrap;
         gap: 50px;
         .movies{
+          text-decoration: none;
+          cursor: grabbing;
           .images{
             img{
-          cursor: grabbing;
 
               height: 26vh;
             }

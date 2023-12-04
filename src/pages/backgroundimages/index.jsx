@@ -5,21 +5,24 @@ import { Link, useParams } from "react-router-dom";
 import { getMovieDetails } from "../../api/moviedetails";
 import { getMoviesYoutube } from "../../api/moviesyoutube";
 import { getMoviePeoples } from "../../api/moviepeoples";
+import {getPeoplecharacter} from '../../api/peoplecharacter'
 const MoviesImages = () => {
   const [data, setData] = useState(null);
   const [data1, setData1] = useState(null);
   const [data2, setData2] = useState(null);
+  const [data3, setData3] = useState(null);
   const { id } = useParams();
   useEffect(() => {
     getMovieDetails(id).then((res) => setData(res.data));
     getMoviesYoutube(id).then((res) => setData1(res.data.results));
     getMoviePeoples(id).then((res) => setData2(res.data));
+   
   }, [id]);
   return (
     <div className={styles.background}>
       <div className={styles.flexs}>
         <div className={styles.texth2}>
-          <h2>{data?.original_title}</h2>
+          <h2>{data?.title}</h2>
         </div>
 
         <div className={styles.control}>
@@ -63,12 +66,16 @@ const MoviesImages = () => {
               <h2>Tagline:</h2>
               <h3>{data?.tagline}</h3>
             </div>
-            <div className={styles.textflex}>
+          </div>
+        </div>
+            <div className={styles.textflex1}>
               <h2>Overview:</h2>
               <h4>{data?.overview}</h4>
             </div>
-          </div>
-        </div>
+            <div className={styles.h2texts}>
+          <h2>Carts</h2>
+
+            </div>
         <div className={styles.controlimages}>
           {data2?.cast.slice(0, 10).map((item) => (
             <Link to={"/person/"+item.id}>
@@ -77,8 +84,10 @@ const MoviesImages = () => {
                 alt=""
               />
               <h2>{item.name}</h2>
+              <h2>({item.character})</h2>
             </Link>
           ))}
+        
         </div>
         <div className={styles.youtubeimages}>
           <div className={styles.youtubemedia}>
