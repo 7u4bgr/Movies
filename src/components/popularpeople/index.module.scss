@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background {
+    padding-bottom: 40px;
+  .flexs {
+    .texts {
+        h2{
+            font-family: "Nova Square", sans-serif;
+            color: white;
+            font-size: 15px;
+        }
+    }
+    .control{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 50px;
+        .images{
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            img{
+                cursor: grabbing;
+          
+                height: 10vh;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            h2{
+                font-family: "Nova Square", sans-serif;
+                color: white;
+                font-size: 12px;
+                cursor: grabbing;
+
+            }
+        }
+      }
+  }
+}
+@media(min-width:768px){
+    .background{
+        .flexs{
+            .control{
+                .images{
+                    width:14%;
+                }
+            }
+        }
+    }
+}
+@media(min-width:992px){
+    .background {
+        padding-bottom: 70px;
+        .flexs {
+          .texts {
+              h2{
+                  font-family: "Nova Square", sans-serif;
+                  color: white;
+                  font-size: 30px;
+              }
+          }
+          .control{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            .images{
+                width: 20%;
+                img{
+                   
+                    height: 13vh;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                h2{
+                   
+                    font-size: 20px;
+                }
+
+            }
+          }
+        }
+      }
+}

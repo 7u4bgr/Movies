@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background .flexs .textsflexs {
+  background-color: rgb(202, 165, 0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.background .flexs .textsflexs .texts h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Nova Square", sans-serif;
+  font-weight: 600;
+  width: 250px;
+}
+.background .flexs .cardmaps {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 40px;
+}
+.background .flexs .cardmaps .cards {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.685);
+}
+.background .flexs .cardmaps .cards .cardsflexs {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: grabbing;
+}
+.background .flexs .cardmaps .cards .cardsflexs .images img {
+  height: 200px;
+  border-radius: 12px;
+}
+.background .flexs .cardmaps .cards .cardsflexs .cardstexts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.background .flexs .cardmaps .cards .cardsflexs .cardstexts h2 {
+  font-family: "Nova Square", sans-serif;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+.background .flexs .cardmaps .cards .cardsflexs .cardstexts p {
+  font-family: "Nova Square", sans-serif;
+  font-weight: 200;
+  font-size: 13px;
+  width: 200px;
+  color: rgb(187, 187, 187);
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .background .flexs .textsflexs .texts h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    width: 100%;
+  }
+  .background .flexs .cardmaps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .background .flexs .cardmaps .cards {
+    width: 40%;
+    border-radius: 20px;
+  }
+  .background .flexs .cardmaps .cards .cardsflexs {
+    padding-left: 30px;
+  }
+  .background .flexs .cardmaps .cards .cardsflexs .cardstexts {
+    gap: 30px;
+  }
+  .background .flexs .cardmaps .cards .cardsflexs .cardstexts h2 {
+    font-size: 25px;
+  }
+  .background .flexs .cardmaps .cards .cardsflexs .cardstexts p {
+    width: 550px;
+    display: -webkit-box;
+    -webkit-line-clamp: 16;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}/*# sourceMappingURL=index.module.css.map */

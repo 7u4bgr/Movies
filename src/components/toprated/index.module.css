@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background .flexs {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.background .flexs .texts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.background .flexs .texts .text1 h2 {
+  color: #fff;
+  /* h1 */
+  font-family: "Nova Square", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+.background .flexs .texts .text2 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+  cursor: grabbing;
+}
+.background .flexs .texts .text2 h2 {
+  color: #989898;
+  font-family: "Nova Square", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+}
+.background .flexs .swiperscontrol {
+  margin-top: 30px;
+}
+.background .flexs .swiperscontrol img {
+  cursor: grabbing;
+  height: 26vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.background .flexs .swiperscontrol img:hover {
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+.background .flexs .swiperscontrol .swiperstexts {
+  margin-top: 10px;
+}
+.background .flexs .swiperscontrol .swiperstexts .skortext {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.background .flexs .swiperscontrol .swiperstexts .skortext h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(202, 165, 0);
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  font-size: 9px;
+  font-family: "Nova Square", sans-serif;
+}
+.background .flexs .swiperscontrol .swiperstexts .skortext h2 {
+  font-family: "Nova Square", sans-serif;
+  color: white;
+  font-size: 13px;
+}
+.background .flexs .swiperscontrol .swiperstexts h3 {
+  margin-top: 10px;
+  font-family: "Nova Square", sans-serif;
+  color: white;
+  font-size: 13px;
+}
+
+@media (min-width: 768px) {
+  .background .flexs .swiperscontrol {
+    margin-top: 80px;
+  }
+  .background .flexs .swiperscontrol img {
+    height: 26vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .background .flexs .swiperscontrol img:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+  }
+}
+@media (min-width: 992px) {
+  .background .flexs .texts .text1 h2 {
+    font-size: 30px;
+  }
+  .background .flexs .texts .text2 h2 {
+    font-size: 18px;
+  }
+  .background .flexs .swiperscontrol {
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  .background .flexs .swiperscontrol img {
+    height: 30vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  .background .flexs .swiperscontrol img:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+  }
+  .background .flexs .swiperscontrol .swiperstexts .skortext h1 {
+    font-size: 11px;
+  }
+  .background .flexs .swiperscontrol .swiperstexts .skortext h2 {
+    font-size: 15px;
+  }
+  .background .flexs .swiperscontrol .swiperstexts h3 {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=index.module.css.map */

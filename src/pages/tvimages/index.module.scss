@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .background {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .flexs {
+      .texth2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+        font-size: 40px;
+        h2{
+          font-family: "Nova Square", sans-serif;
+              color: rgb(202, 165, 0);
+              width: 200px;
+        }
+      }
+      .control {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+  
+        .images {
+          img{
+            height: 35vh;
+            border-radius: 10px;
+          }
+        }
+        .texts {
+          margin-top: 40px;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          .textflex {
+              display: flex;
+             
+              justify-content: flex-start;
+            gap: 20px;
+            h2 {
+              font-family: "Nova Square", sans-serif;
+              color: rgb(202, 165, 0);
+            }
+            h3 {
+              font-family: "Nova Square", sans-serif;
+              color: white;
+              width: 200px;
+            }
+            h4 {
+              width: 200px;
+              font-family: "Nova Square", sans-serif;
+              color: white;
+              font-size:16px;
+            }
+          }
+        }
+      }
+      .controlimages{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        a{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          gap: 15px;
+        margin-top: 90px;
+  
+          img{
+              
+              cursor: grabbing;
+            
+                  height: 10vh;
+                  border-radius: 30%;
+                  object-fit: cover;
+          }
+          h2{
+            font-family: "Nova Square", sans-serif;
+              color: white;
+              font-size: 12px;
+          }
+        }
+      }
+      .youtubeimages{
+        margin-top: 80px;
+        
+        gap: 50px;
+        .youtubemedia{
+          display: flex;
+     
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+          .textimages{
+            
+            h2{
+              font-family: "Nova Square", sans-serif;
+              color: rgb(202, 165, 0);
+              font-size: 40px;
+            }
+          }
+          .youtubeflexs{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 50px;
+            .iframes{
+              border-radius: 10px;
+                display: flex;
+          justify-content:center;
+          flex-direction: column;
+          align-items: center;
+          gap: 50px;
+        img{
+          width: 80%;
+          height: 30vh;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .background {
+      .flexs {
+        .texth2{
+          h2{
+            width: 500px;
+          }
+        }
+        .control {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          gap: 60px;
+          .images{
+  
+            img{
+              height: 55vh;
+              border-radius: 10px;
+            }
+          }
+          .texts {
+            margin-top: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .textflex {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              h2 {
+                font-size: 25px;
+              }
+              h3 {
+                font-size: 18px;
+              }
+              h4 {
+                width: 500px;
+                font-family: "Nova Square", sans-serif;
+                color: white;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+        .controlimages{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+         gap: 90px;
+        }
+        .youtubeimages{
+        margin-top: 80px;
+        
+        gap: 50px;
+        .youtubemedia{
+          display: flex;
+     
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+          .textimages{
+            
+            h2{
+              font-family: "Nova Square", sans-serif;
+              color: rgb(202, 165, 0);
+              font-size: 40px;
+            }
+          }
+          .youtubeflexs{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            gap: 60px;
+            .iframes{
+              display: flex;
+              justify-content: space-around;
+              flex-direction: row;
+              gap: 90px;
+              img{
+                width: 100%;
+                height: 30vh;
+                
+              }
+            }
+          }
+        }
+      }
+      }
+    }
+  }
+  

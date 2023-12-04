@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.background .flexs .texth2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  font-size: 40px;
+}
+.background .flexs .texth2 h2 {
+  font-family: "Nova Square", sans-serif;
+  color: rgb(202, 165, 0);
+  width: 200px;
+}
+.background .flexs .control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.background .flexs .control .images img {
+  height: 35vh;
+  border-radius: 10px;
+}
+.background .flexs .control .texts {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.background .flexs .control .texts .textflex {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.background .flexs .control .texts .textflex h2 {
+  font-family: "Nova Square", sans-serif;
+  color: rgb(202, 165, 0);
+}
+.background .flexs .control .texts .textflex h3 {
+  font-family: "Nova Square", sans-serif;
+  color: white;
+  width: 200px;
+}
+.background .flexs .control .texts .textflex h4 {
+  width: 200px;
+  font-family: "Nova Square", sans-serif;
+  color: white;
+  font-size: 16px;
+}
+.background .flexs .controlimages div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+.background .flexs .controlimages div img {
+  height: auto;
+  cursor: grabbing;
+  height: 10vh;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.background .flexs .youtubeimages {
+  margin-top: 80px;
+  gap: 50px;
+}
+.background .flexs .youtubeimages .youtubemedia {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.background .flexs .youtubeimages .youtubemedia .textimages h2 {
+  font-family: "Nova Square", sans-serif;
+  color: rgb(202, 165, 0);
+  font-size: 40px;
+}
+.background .flexs .youtubeimages .youtubemedia .iframes {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 50px;
+}
+
+@media (min-width: 992px) {
+  .background .flexs .texth2 h2 {
+    width: 500px;
+  }
+  .background .flexs .control {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 60px;
+  }
+  .background .flexs .control .images img {
+    height: 55vh;
+    border-radius: 10px;
+  }
+  .background .flexs .control .texts {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .background .flexs .control .texts .textflex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .background .flexs .control .texts .textflex h2 {
+    font-size: 25px;
+  }
+  .background .flexs .control .texts .textflex h3 {
+    font-size: 18px;
+  }
+  .background .flexs .control .texts .textflex h4 {
+    width: 500px;
+    font-family: "Nova Square", sans-serif;
+    color: white;
+    font-size: 16px;
+  }
+  .background .flexs .youtubeimages {
+    margin-top: 80px;
+    gap: 50px;
+  }
+  .background .flexs .youtubeimages .youtubemedia {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .background .flexs .youtubeimages .youtubemedia .textimages h2 {
+    font-family: "Nova Square", sans-serif;
+    color: rgb(202, 165, 0);
+    font-size: 40px;
+  }
+  .background .flexs .youtubeimages .youtubemedia .iframes {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 90px;
+  }
+}/*# sourceMappingURL=index.module.css.map */

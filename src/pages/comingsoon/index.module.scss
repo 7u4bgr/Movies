@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .background {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+    .control {
+      margin-top: 40px;
+      .texts {
+        display: flex;
+        justify-content: center;
+        h2 {
+          font-family: "Nova Square", sans-serif;
+          color: rgb(202, 165, 0);
+          font-size: 30px;
+          transition: 300ms;
+        }
+        h2:hover {
+          transition: 300ms;
+  
+          rotate: 15deg;
+          cursor: grabbing;
+        }
+      }
+      .moviescontrol{
+         display: grid;
+  grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 50px;
+          .movies{
+              margin-top: 40px;
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              .images{
+                img{
+          cursor: grabbing;
+
+                  height: 26vh;
+                }
+              }
+              .texts1{
+                  display: flex;
+                  align-items: center;
+                  gap: 5px;
+                  h1{
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      padding-top: 5px;
+                      padding-bottom: 5px;
+                  font-family: "Nova Square", sans-serif;
+                      background-color: rgb(58, 58, 58);
+                      width: 30px;
+                      font-size: 10px;
+                      color: rgb(202, 165, 0);
+                  }
+                  h2{
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      padding-top: 5px;
+                      padding-bottom: 5px;
+                  font-family: "Nova Square", sans-serif;
+                      font-size: 14px;
+                      color: rgb(202, 165, 0);
+                      display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+                  }
+              }
+              .texts2{
+                  display: flex;
+                  align-items: center;
+                  gap: 5px;
+                  h1{
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      padding-top: 5px;
+                      padding-bottom: 5px;
+                  font-family: "Nova Square", sans-serif;
+                      background-color: rgb(58, 58, 58);
+                      width: 30px;
+                      font-size: 10px;
+                      color: rgb(202, 165, 0);
+                  }
+                  h2{
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      padding-top: 5px;
+                      padding-bottom: 5px;
+                  font-family: "Nova Square", sans-serif;
+                      font-size: 14px;
+                      color: rgb(202, 165, 0);
+                  }
+              }
+          }
+      }
+    }
+  }
+  @media(min-width:768px){
+    .background{
+      .control{
+        .moviescontrol{
+          display: grid;
+  grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .background {
+      width: 80%;
+      margin: auto;
+      .control {
+        .texts {
+          h2 {
+            font-size: 60px;
+          }
+        }
+        .moviescontrol{
+          display: grid;
+  grid-template-columns: repeat(5, 1fr);
+          .movies{
+            .images{
+              img{
+                height: 30vh;
+              }
+            }
+              .texts1{
+                  h1{
+                      font-size: 13px;
+                      width: 40px;
+                      padding-top: 8px;
+                      padding-bottom: 8px;
+                  }
+                  h2{
+                      font-size: 18px;
+                  }
+              }
+              .texts2{
+                  h1{
+                      font-size: 13px;
+                      width: 40px;
+                      padding-top: 8px;
+                      padding-bottom: 8px;
+                  }
+                  h2{
+                      font-size: 15px;
+                  }
+              }
+          }
+        }
+      }
+    }
+  }
