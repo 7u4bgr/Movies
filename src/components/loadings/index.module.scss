@@ -1,0 +1,38 @@
+.background{
+    background: #000000;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 70;
+    .control{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    
+        img{
+            width: 100%;
+            object-fit: cover;
+            animation: spin 2s infinite ease-in-out;
+        }
+    }
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    // 25%{
+    //     transform: rotate(90deg);
+    // }
+    // 50%{
+    //     transform: rotate(180deg);
+    // }
+    // 75%{
+    //     transform: rotate(270deg);
+    // }
+    100%{
+        transform: rotate(360deg);
+    }
+}

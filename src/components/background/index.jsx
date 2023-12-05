@@ -32,10 +32,7 @@ function submitHandler(e){
               <SearchIcon />
             </button>
           </form>
-          <div className={styles.hr}>
-
-          <hr />
-          </div>
+          
         </div>
         <Swiper
           spaceBetween={5}
