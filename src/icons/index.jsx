@@ -120,4 +120,11 @@ const GoogleIcon = () => {
     </svg>
   );
 };
-export { SearchIcon, RightIcon, LinkedinIcon, WhatsappIcon, GithubIcon,GoogleIcon };
+const StartIcon=()=>{
+  return(
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M3.00007 7.1999L21.0001 7.1999M3.00006 16.7999L21.0001 16.7999M12.0001 2.3999L12.0001 21.5999M16.8001 2.3999L16.8001 7.1999M16.8001 16.7999L16.8001 21.5999M7.20007 2.3999L7.20007 7.1999M7.20006 16.7999L7.20006 21.5999M5.99996 2.3999L18.0001 2.3999C19.9883 2.39991 21.6001 4.01168 21.6001 5.99991L21.6001 17.9999C21.6001 19.9881 19.9883 21.5999 18.0001 21.5999L5.99995 21.5999C4.01173 21.5999 2.39996 19.9881 2.39996 17.9999L2.39996 5.9999C2.39996 4.01168 4.01173 2.3999 5.99996 2.3999Z" stroke="white" stroke-opacity="0.9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+  )
+}
+export { SearchIcon, RightIcon, LinkedinIcon, WhatsappIcon, GithubIcon,GoogleIcon,StartIcon };

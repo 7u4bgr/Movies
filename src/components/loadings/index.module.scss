@@ -12,10 +12,11 @@
         left: 50%;
         transform: translate(-50%,-50%);
     
-        img{
+        svg{
             width: 100%;
+            height: 20vh;
             object-fit: cover;
-            animation: spin 2s infinite ease-in-out;
+            animation: spin 1s infinite ease-in-out;
         }
     }
 }

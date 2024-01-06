@@ -54,16 +54,16 @@
               color: rgb(255, 255, 255);
               font-size: 18px;
             }
-            p{
-                font-family: "Nova Square", sans-serif;
-          font-weight: 200;
-          font-size: 13px;
-          width: 200px;
-          color: rgb(187, 187, 187);
-          display: -webkit-box;
-          -webkit-line-clamp: 10;
-          -webkit-box-orient: vertical;  
-          overflow: hidden;
+            p {
+              font-family: "Nova Square", sans-serif;
+              font-weight: 200;
+              font-size: 13px;
+
+              color: rgb(187, 187, 187);
+              display: -webkit-box;
+              -webkit-line-clamp: 10;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
             }
           }
         }
@@ -84,36 +84,35 @@
           }
         }
       }
-      .cardmaps{
+      .cardmaps {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        .cards{
-            width: 40%;
-            border-radius: 20px;
-            .cardsflexs{
-                padding-left: 30px;
-                .images{
-                    img{
-
-                    }
-                }
-                .cardstexts{
-                    gap: 30px;
-                    h2{
-font-size: 25px;
-                    }
-                    p{
-                      width: 550px;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 16;
-          
-          -webkit-box-orient: vertical;  
-          overflow: hidden;
-                    }
-                }
+        .cards {
+          width: 40%;
+          border-radius: 20px;
+          .cardsflexs {
+            padding-left: 30px;
+            .images {
+              img {
+              }
             }
+            .cardstexts {
+              gap: 30px;
+              h2 {
+                font-size: 25px;
+              }
+              p {
+              
+                display: -webkit-box;
+                -webkit-line-clamp: 16;
+
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+              }
+            }
+          }
         }
       }
     }

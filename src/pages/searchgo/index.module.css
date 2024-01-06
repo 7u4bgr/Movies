@@ -56,7 +56,6 @@
   font-family: "Nova Square", sans-serif;
   font-weight: 200;
   font-size: 13px;
-  width: 200px;
   color: rgb(187, 187, 187);
   display: -webkit-box;
   -webkit-line-clamp: 10;
@@ -91,7 +90,6 @@
     font-size: 25px;
   }
   .background .flexs .cardmaps .cards .cardsflexs .cardstexts p {
-    width: 550px;
     display: -webkit-box;
     -webkit-line-clamp: 16;
     -webkit-box-orient: vertical;
